@@ -1,0 +1,5 @@
+package com.ramintaghizada.designpatterns.demo1.model;
+
+public class OracleLogDAO implements LogDAO{
+
+}

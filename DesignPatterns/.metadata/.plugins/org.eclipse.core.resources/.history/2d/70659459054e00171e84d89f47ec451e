@@ -1,0 +1,10 @@
+package com.ramintaghizada.designpatterns.demo1.model;
+
+public abstract class DAOFactory {
+
+	PersonDAO getPersonDAO();
+
+	
+	LogDAO getLogDAO();
+
+}

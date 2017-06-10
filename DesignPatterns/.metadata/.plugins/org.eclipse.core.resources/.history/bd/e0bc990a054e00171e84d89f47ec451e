@@ -1,0 +1,17 @@
+package com.ramintaghizada.designpatterns.demo1.model;
+
+public class OracleDAOFactory implements DAOFactory{
+
+	@Override
+	public PersonDAO getPersonDAO() {
+		// TODO Auto-generated method stub
+		return new PersonDAO();
+	}
+
+	@Override
+	public LogDAO getLogDAO() {
+		// TODO Auto-generated method stub
+		return new LogDAO();
+	}
+
+}

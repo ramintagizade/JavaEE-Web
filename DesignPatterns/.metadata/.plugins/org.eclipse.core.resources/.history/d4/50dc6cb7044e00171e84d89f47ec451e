@@ -1,0 +1,12 @@
+package com.ramintaghizada.designpatterns.demo1.model;
+
+public interface DAOFactory {
+
+	PersonDAO getPersonDAO();
+
+	/* (non-Javadoc)
+	 * @see com.ramintaghizada.designpatterns.demo1.model.DAOFactory#getLogDAO()
+	 */
+	LogDAO getLogDAO();
+
+}

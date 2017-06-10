@@ -1,0 +1,10 @@
+1497115598562	Rename type 'PersonDAO'
+1497115616954	Rename type 'LogDAO'
+1497115708596	Extract interface 'PersonDAO'
+1497115794625	Extract interface 'LogDAO'
+1497116055561	Rename type 'DAOFactory'
+1497116085249	Extract interface 'DAOFactory'
+1497116165759	Delete element
+1497116183277	Extract interface 'DAOFactory'
+1497116218250	Delete element
+1497116430109	Extract interface 'DAOFactory'

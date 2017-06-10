@@ -1,0 +1,19 @@
+package com.ramintaghizada.designpatterns.demo1.model;
+
+public class MySQLDAOFactory implements DAOFactory  {
+	
+	@Override
+	public  PersonDAO getPersonDAO(){
+		return new MySQLPersonDAO();
+	}
+	/* (non-Javadoc)
+	 * @see com.ramintaghizada.designpatterns.demo1.model.DAOFactory#getLogDAO()
+	 */
+	/* (non-Javadoc)
+	 * @see com.ramintaghizada.designpatterns.demo1.model.DAOFactory#getLogDAO()
+	 */
+	@Override
+	public LogDAO getLogDAO(){
+		return new MySQLLogDAO();
+	}
+}
