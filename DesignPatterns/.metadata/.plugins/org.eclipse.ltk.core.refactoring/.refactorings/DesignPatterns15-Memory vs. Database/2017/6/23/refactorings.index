@@ -1,0 +1,7 @@
+1497122057358	Delete element
+1497122151845	Move compilation unit
+1497124135564	Rename type 'LoginFormEvent'
+1497124237566	Rename type 'LoginListener'
+1497125020838	Rename field 'loginListener'
+1497126725083	Rename method 'fireLoginEvent'
+1497126866311	Rename method 'createUserListener'
