@@ -1,0 +1,11 @@
+
+public class Dog implements Animal extends AbstractAnimal{
+
+	@Override
+	public void speak() {
+		System.out.println("Woof");
+		
+	}
+	
+
+}

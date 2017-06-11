@@ -1,0 +1,16 @@
+public class B {
+
+  public static void main(String [] args){
+    BufferedReader inp = new BufferedReader (new InputStreamReader(System.in));
+    int t = Integer.parseInt(inp.readLine());
+    while(t>0){
+      int n = Integer.parseInt(inp.readLine());
+      t--;
+      System.out.println(n);
+    }
+
+  }
+  public void solveB(){
+
+  }
+}

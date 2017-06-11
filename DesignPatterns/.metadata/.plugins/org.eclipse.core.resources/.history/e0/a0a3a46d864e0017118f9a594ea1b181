@@ -1,0 +1,43 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class B {
+
+  public static void main(String [] args) throws NumberFormatException, IOException{
+	System.out.println("OK");
+    BufferedReader inp = new BufferedReader (new InputStreamReader(System.in));
+    Long t = Long.parseLong(inp.readLine());
+    while(t>0){
+      Long n = Long.parseLong(inp.readLine());
+      solveB(n);
+      t--;
+    }
+
+  }
+  public static void solveB(int Case,Long n){
+	  while(n>0 ){
+		  if(isTidy(n)) {
+			  System.out.println("Case #"+Case+": "+n);
+			  break;
+		  }
+		  n--;
+	  }
+  }
+  public static boolean isTidy(Long t){
+	  Long n = t;
+	  Long previous =  n%10;
+	  boolean ok = true;
+	  while(n>0){
+		  Long last =  n%10;
+		  if(previous<last){
+			  ok = false;
+			  break;
+		  }
+		  previous = last;
+		  n = n/10;
+	  }
+	  if(ok) return true;
+	  return false;
+  }
+}

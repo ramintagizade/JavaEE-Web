@@ -1,0 +1,73 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+
+public class B {
+
+  public static void main(String [] args) throws Exception{
+    BufferedReader inp = new BufferedReader (new FileReader("B-small-practice.in"));
+    //BufferedReader inp = new BufferedReader (new InputStreamReader(System.in));
+    Long t = Long.parseLong(inp.readLine());
+    int id = 1;
+    Long T = t;
+    PrintWriter writer = new PrintWriter("output.out", "UTF-8");
+    while(id<=t){
+      Long n = Long.parseLong(inp.readLine());
+      writer.println(n+" => "+"Case #"+id+": "+ solveBsmall(n));
+      //System.out.println(solveBlarge(n));
+	  if(T==id)
+		writer.close();
+      id++;
+    }
+  }
+  public static String solveBlarge(Long n) throws Exception{
+	  String s = String.valueOf(n);
+	  String cur = "";
+	  boolean hasReduced = false;
+	  for(int i=0;i<s.length()-1;i++){
+		 if(s.charAt(i) <= s.charAt(i+1)){
+			 cur+=s.charAt(i);
+			 continue;
+		 }
+		 else {
+			 hasReduced = true;
+			 StringBuilder temp = new StringBuilder(cur);
+			 
+			 for(int j=i+1;j<s.length();j++){
+				 cur+='9';
+			 }
+			 break;
+		 }
+	  }
+	  if(s.length()==1) return s;
+	  if(hasReduced==false) cur+=s.charAt(s.length()-1);
+	  return cur.toString();
+  }
+  public static Long solveBsmall(Long n){
+	  while(n>0 ){
+		  if(isTidy(n)) {
+			 break;
+		  }
+		  n--;
+	  }
+	  return n;
+  }
+  public static boolean isTidy(Long t){
+	  Long n = t;
+	  Long previous =  n%10;
+	  boolean ok = true;
+	  while(n>0){
+		  Long last =  n%10;
+		  if(previous<last){
+			  ok = false;
+			  break;
+		  }
+		  previous = last;
+		  n = n/10;
+	  }
+	  if(ok) return true;
+	  return false;
+  }
+}

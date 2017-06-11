@@ -1,0 +1,6 @@
+
+public abstract class AnimalFactory {
+		public Animal createAnimal(){
+			return null;
+		}
+}

@@ -1,9 +1,0 @@
-package com.ramintaghizada.designpatterns.demo1.model;
-
-import java.util.HashSet;
-import java.util.Set;
-
-public class Model {
-	private Set<Person> people = new HashSet<Person>();
-	private PeopleChangedListener 
-}
