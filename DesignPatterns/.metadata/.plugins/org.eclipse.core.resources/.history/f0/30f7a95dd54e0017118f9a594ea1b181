@@ -1,0 +1,7 @@
+
+public class Logger {
+	public LogWriter logWriter;
+	public void write(String text){
+		
+	}
+}

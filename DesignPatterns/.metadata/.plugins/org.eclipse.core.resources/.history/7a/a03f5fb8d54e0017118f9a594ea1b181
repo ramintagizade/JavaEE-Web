@@ -1,0 +1,8 @@
+
+public class Logger {
+	public LogWriter logWriter;
+	public Logger()
+	public void write(String text){
+		logWriter.out(text);
+	}
+}

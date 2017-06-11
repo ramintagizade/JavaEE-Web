@@ -1,0 +1,15 @@
+
+public class App {
+
+	public static void main(String[] args) {
+		//Composition
+		ConsoleLogWriter logWriter = new ConsoleLogWriter();
+		Logger logger = new Logger(logWriter);
+		logger.write("hello there");
+		//Inheritance 
+		ConsoleLogWriter logWriter = new ConsoleLogWriter();
+		Logger logger = new Logger(logWriter);
+		logger.write("hello there");
+	}
+
+}
