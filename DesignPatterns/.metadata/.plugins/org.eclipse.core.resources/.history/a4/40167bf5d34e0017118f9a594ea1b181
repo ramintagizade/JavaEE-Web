@@ -1,0 +1,7 @@
+
+public class GameConsole {
+	public void clearScreen(){
+		System.out.println("Clearning screen ..,");
+	}
+	
+}

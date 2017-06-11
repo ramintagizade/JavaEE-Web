@@ -1,0 +1,6 @@
+
+public class GameConsole {
+	public void clearScreen(){
+		
+	}
+}

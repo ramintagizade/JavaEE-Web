@@ -1,0 +1,15 @@
+
+public class App {
+
+	public static void main(String[] args) {
+		InputSystem input = new InputSystem();
+		GameObjects objects = new GameObjects();
+		GameConsole console = new GameConsole();
+		while(true){
+			input.getInput();
+			
+		}
+
+	}
+
+}

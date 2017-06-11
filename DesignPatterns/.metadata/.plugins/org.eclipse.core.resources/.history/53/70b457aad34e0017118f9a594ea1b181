@@ -1,0 +1,6 @@
+
+public class InputSystem {
+	public void getInput(){
+		
+	}
+}

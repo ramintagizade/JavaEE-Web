@@ -1,0 +1,9 @@
+/*
+*  Facade Class
+*/
+
+public class Game {
+	InputSystem input = new InputSystem();
+	GameObjects objects = new GameObjects();
+	GameConsole screen = new GameConsole();
+}
